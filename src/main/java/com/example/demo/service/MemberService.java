@@ -11,8 +11,8 @@ import java.util.Optional;
 import java.util.List;
 import java.util.ArrayList;
 
-@Transactional
-@Service
+@Transactional		// 트랜잭션을 걸어주는 어노테이션(메서드가 끝나면 트랜잭션 종료)
+@Service			// 서비스를 나타내는 어노테이션
 public class MemberService {
 	private final MemberRepository memberRepository;
 
